@@ -1,0 +1,31 @@
+<div class="page-header">
+    <h1>BracketApp</a></h1>
+    <h4>Enter tournament</h4>
+</div>
+<div class="col-md-4">
+    <h3>Enter the tournament</h3>
+    <form ng-submit="addPlayer()" class="form-inline" role="form">
+        <div class="form-group">
+            <input type="text" ng-model="playerName" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <button name="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+<div>
+    <ul>
+        <td class="col-md-6">
+            <tr>
+                <li class="unbulleted" ng-repeat="item in players | orderBy: '-wins'">
+                    {{ item.name }}<button ng-click="PlayersFactory.winner(item)" ng-model="item.wins" class="btn btn-success btn-xs">Win Count: {{ item.wins }}</button></td>
+                </li>
+            </tr>
+        </td>
+    </ul>
+</div>
+<div>
+    <table ng-model="makeTable()" ng-repeat="item in players">
+        {{item.name}}
+    </table>
+</div>
+
+<a ui-sref="home" class="btn btn-default">Home</a>

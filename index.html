@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BracketApp">
+    <head>
+        <meta charset="utf-8">
+        <title>BracketApp</title>
+
+        <!-- ANGULAR -->
+        <script src="lib/angular.js"></script>
+        <script src="lib/angular-ui-router.js"></script>
+
+        <!-- APP -->
+        <script src="app.js"></script>
+
+        <!-- FACTORIES & CONTROLLERS -->
+        <script src="service/PlayersFactory.js"></script>
+
+        <script src="controllers/PlayersController.js"></script>
+        <script src="controllers/GamesController.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div ui-view> </div>
+        </div>
+        <div class="container">
+            <div class="col-md-2">
+                <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th>Round 1</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John</td>
+
+                  </tr>
+                  <tr>
+                    <td>Mary</td>
+
+                  </tr>
+
+
+
+
+                </tbody>
+
+              </table>
+            </div>
+        </div>
+
+    </body>
+</html>

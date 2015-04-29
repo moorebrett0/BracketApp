@@ -1,0 +1,55 @@
+<div class="page-header">
+    <h1>BracketApp</a></h1>
+</div>
+<div class="col-md-4">
+    <h3>Tournament Standing</h3>
+
+</div>
+<div>
+    <ul>
+        <td class="col-md-3">
+            <tr>
+                <li class="unbulleted" ng-repeat="item in players">
+                    {{ item.name }}<button ng-click="PlayersFactory.winner(item)" ng-model="item.wins" class="btn btn-success btn-xs">Win Count: {{ item.wins }}</button></td>
+                </li>
+            </tr>
+        </td>
+    </ul>
+</div>
+<div>
+    <h1>Round 2</h1>
+    <ul>
+        <table class="table">
+
+                <li class="unbulleted" ng-repeat="item in players | filter:wins = 1">
+                    {{ item.name }}<button ng-click="PlayersFactory.winner(item)" ng-model="item.wins" class="btn btn-success btn-xs">Win Count: {{ item.wins }}</button></td>
+                </li>
+
+        </table>
+    </ul>
+</div>
+
+    <h1>Round 3</h1>
+    <ul>
+        <table class="table">
+            <tr>
+                <li class="unbulleted" ng-repeat="item in players | filter:wins = 2">
+                    {{ item.name }}<button ng-click="PlayersFactory.winner(item)" ng-model="item.wins" class="btn btn-success btn-xs">Win Count: {{ item.wins }}</button></td>
+                </li>
+            </tr>
+        </td>
+    </ul>
+</div>
+<div>
+    <h1>Round 4</h1>
+    <ul>
+        <td class="col-md-3">
+            <tr>
+                <li class="unbulleted" ng-repeat="item in players | filter:wins = 3">
+                    {{ item.name }}<button ng-click="PlayersFactory.winner(item)" ng-model="item.wins" class="btn btn-success btn-xs">Win Count: {{ item.wins }}</button></td>
+                </li>
+            </tr>
+        </td>
+    </ul>
+</div>
+<a ui-sref="home" class="btn btn-default">Home</a>
