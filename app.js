@@ -17,4 +17,10 @@ var bracketApp = angular.module('BracketApp', ['ui.router'])
             templateUrl: "partials/bracket.html",
             controller: "PlayerCtrl"
         });
+
+        $stateProvider.state("binary", {
+            url: "binary",
+            templateUrl: "partials/binary_tree.html",
+            controller: "BracketCtrl"
+        });
     });

@@ -12,7 +12,7 @@ bracketApp.factory('PlayersFactory', function PlayersFactory() {
     ];
 
     factory.addPlayer = function(playerName) {
-        factory.players.push({ name: playerName, id: factory.players.length + 1, wins: 0 });
+        factory.players.push({ name: playerName, id: factory.players.length + 1, wins: 0, won: false });
     };
 
     factory.winner = function(player, wins) {

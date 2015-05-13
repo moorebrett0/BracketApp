@@ -2,7 +2,34 @@
   list-style: none;
 }
 
-.table {
-    width: 90px;
-    background-color: indianred;
+.bracket-container {
+    width: 640px;
+    height: 480px;
+    background: url('https://catsig.files.wordpress.com/2013/02/tournamentbracket.jpg') no-repeat;
+    background-size: 100% 100%;
+    border: 2px solid red;
+}
+
+.bracket-1 {
+    /*margin-top: 50px;*/
+}
+
+.bracket-1 button,
+.bracket-2 button,
+.bracket-3 button,
+.bracket-4 button  {
+    width: 100%;
+}
+
+.bracket-1 button:nth-child(odd) {
+    margin-top: 60px;
+}
+
+.bracket-1 button:nth-child(even) {
+    position: relative;
+    top: 20px;
+}
+
+.bracket-2 button{
+    margin-top: 90px;
 }
