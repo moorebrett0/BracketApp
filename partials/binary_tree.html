@@ -6,11 +6,11 @@
              </div>
 
              <div class="col-sm-3 bracket-2">
-                 <button ng-repeat="item in players | filter:{wins: 1}" ng-click="PlayersFactory.winner(item)" ng-model="item.wins">{{item.name}}</button>
+                 <button ng-repeat="item in players | filter:oneOrMore" ng-click="PlayersFactory.winner(item)" ng-model="item.wins">{{item.name}}</button>
              </div>
 
              <div class="col-sm-3 bracket-3">
-                 <button ng-repeat="item in players | filter:{wins: 2}" ng-click="PlayersFactory.winner(item)" ng-model="item.wins">{{item.name}}</button>
+                 <button ng-repeat="item in players | filter:twoOrMore" ng-click="PlayersFactory.winner(item)" ng-model="item.wins">{{item.name}}</button>
              </div>
 
              <div class="col-sm-3">
