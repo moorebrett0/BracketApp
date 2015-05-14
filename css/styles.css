@@ -10,8 +10,16 @@
     border: 2px solid red;
 }
 
+.reset-bracket {
+    margin-top: 50px;
+}
+
 .bracket-1 {
     /*margin-top: 50px;*/
+}
+
+.bracket-3 {
+    margin-top: 140px;
 }
 
 .bracket-1 button,
@@ -30,6 +38,14 @@
     top: 20px;
 }
 
-.bracket-2 button{
+.bracket-2 button {
     margin-top: 90px;
+}
+
+.bracket-3 button:nth-child(even) {
+    margin-top: 190px;
+}
+
+.bracket-4 button {
+    margin-top: 250px
 }
