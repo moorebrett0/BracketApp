@@ -14,7 +14,7 @@
              </div>
 
              <div class="col-xs-3 bracket-4">
-                 <button ng-repeat="item in players | filter:{wins: 3} | limitTo: 1" ng-model="item.wins">{{item.name}}</button>
+                 <button ng-repeat="item in players | filter:threeOrMore | limitTo: 1" ng-model="item.wins">{{item.name}}</button>
              </div>
         </div>
 

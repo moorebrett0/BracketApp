@@ -16,6 +16,12 @@ bracketApp.controller('BracketCtrl', function BracketCtrl($scope, PlayersFactory
         }
     };
 
+    $scope.threeOrMore = function(value, index) {
+        if (value.wins >= 3) {
+            return true;
+        }
+    };
+
     $scope.resetWins = function() {
         $scope.players.forEach(function(element) {
             element.wins = 0;
